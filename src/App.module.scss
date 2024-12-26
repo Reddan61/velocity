@@ -1,0 +1,17 @@
+@use "@/fonts/fonts.scss";
+@use "@/variables.scss";
+
+* {
+  font-family: OpenSans, sans-serif;
+}
+
+body {
+  font-family: OpenSans, sans-serif;
+  width: 100%;
+}
+
+.app {
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+}

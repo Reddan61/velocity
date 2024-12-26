@@ -1,0 +1,17 @@
+.button {
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  transition: color 300ms ease, border-color 300ms ease;
+  user-select: none;
+
+  &:hover {
+    border-color: var(--button-primary-hover-color);
+    color: var(--button-primary-hover-color);
+  }
+}

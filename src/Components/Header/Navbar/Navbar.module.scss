@@ -1,0 +1,16 @@
+.nav {
+  font-size: 14px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    user-select: none;
+
+    li {
+      &:hover {
+        color: var(--text-primary-color);
+      }
+    }
+  }
+}
