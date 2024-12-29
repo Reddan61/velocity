@@ -1,5 +1,18 @@
 :root {
   --container-max-width: 940px;
+
   --text-primary-color: #2e9dff;
+  --text-paragraph-primary-color: #6a859c;
+  --title-section-primary-color: #676770;
+  --subtitle-section-primary-color: #8e8e9c;
+  --title-section-secondary-color: white;
+  --subtitle-section-secondary-color: #e8e8e8;
+
+  --link-primary-text-color: #668cad;
+  --link-selected-primary-text-color: #0082f3;
+
   --button-primary-hover-color: #2e9dff;
+  --button-primary-background-color: #69b9ff;
+  --button-secondary-background-color: #92a0ad;
+  --button-background-primary-selected-color: #2e9dff;
 }

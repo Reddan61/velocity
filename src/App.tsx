@@ -1,14 +1,20 @@
 import "@/reset.scss";
-import { Header } from "@/Components/Header/Header";
-import { ThisSection } from "@/Components/ThisSection/ThisSection";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Layout } from "@/Pages/Layout/Layout";
+import { Contact } from "@/Pages/Contact/Contact";
+import { Home } from "@/Pages/Home/Home";
+import { PAGES } from "@/constants";
 
-import styles from "./App.module.scss";
+import "./App.module.scss";
 
 export const App = () => {
   return (
-    <div className={styles.app}>
-      <Header />
-      <ThisSection />
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path={PAGES.HOME} element={<Home />} />
+        <Route path={PAGES.CONTACT} element={<Contact />} />
+      </Route>
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 };

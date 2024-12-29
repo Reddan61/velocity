@@ -1,0 +1,41 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h3,
+  p {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    color: var(--title-section-primary-color);
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--text-paragraph-primary-color);
+  }
+}
+
+.image {
+  margin: 40px 0 0;
+  width: 100%;
+  height: 610px;
+  user-select: none;
+}
+
+.enter {
+  opacity: 0;
+}
+
+.enterActive {
+  opacity: 1;
+}
+
+.enterActive {
+  transition: opacity 1000ms ease;
+}

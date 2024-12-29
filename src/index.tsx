@@ -1,11 +1,15 @@
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { App } from "@/App";
 
-const div = document.getElementById("app");
+const root = document.getElementById("app");
 
-if (div) {
-  const root = createRoot(div);
-  root.render(<App />);
+if (root) {
+  createRoot(root).render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
 } else {
   throw new Error("root not found!");
 }

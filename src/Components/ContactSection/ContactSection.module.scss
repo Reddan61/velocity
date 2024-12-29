@@ -1,0 +1,44 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 10px;
+
+  font-weight: 300;
+  text-align: center;
+
+  h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--title-section-primary-color);
+  }
+
+  h2 {
+    margin: 16px 0 0;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--subtitle-section-primary-color);
+  }
+}
+
+.text {
+  margin: 60px 0 0;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--text-paragraph-primary-color);
+
+  p {
+    &:last-child {
+      margin: 20px 0 0;
+    }
+  }
+}

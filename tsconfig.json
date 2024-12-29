@@ -9,7 +9,8 @@
     "moduleResolution": "node",
     "paths": {
       "@/*": ["./src/*"],
-      "images/*": ["./src/assets/images/*"]
+      "images/*": ["./src/assets/images/*"],
+      "svgs/*": ["./src/assets/svg/*"]
     }
   }
 }

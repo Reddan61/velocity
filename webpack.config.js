@@ -7,6 +7,7 @@ module.exports = {
     filename: "index.js",
     path: path.resolve(__dirname, "build"),
     clean: true,
+    publicPath: "/",
   },
   mode: "development",
   resolve: {
@@ -14,12 +15,14 @@ module.exports = {
     alias: {
       "@": path.resolve(__dirname, "src"),
       images: path.resolve(__dirname, "src", "assets", "images"),
+      svgs: path.resolve(__dirname, "src", "assets", "svg"),
     },
   },
   devServer: {
     static: {
       directory: path.join(__dirname, "build"),
     },
+    historyApiFallback: true,
     compress: true,
     port: 8080,
     hot: true,
@@ -62,7 +65,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        type: "asset/source",
+        type: "asset/inline",
       },
     ],
   },
