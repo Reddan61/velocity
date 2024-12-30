@@ -7,7 +7,6 @@ module.exports = {
     filename: "index.js",
     path: path.resolve(__dirname, "build"),
     clean: true,
-    publicPath: "/",
   },
   mode: "development",
   resolve: {
