@@ -3,20 +3,31 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 300px;
   border-radius: 5px;
   padding: 15px 15px 25px;
   border: 1px solid #dcebf7;
 
+  visibility: hidden;
+
   img {
     display: block;
     padding: 15px;
-    width: 35%;
+    width: 90px;
     border: 10px solid #fff;
     border-radius: 50%;
     background-color: #69b9ff;
     box-shadow: 0 0 0 1px #2e9dff;
     user-select: none;
+
+    @media (max-width: 800px) {
+      width: 70px;
+      padding: 10px;
+    }
+  }
+
+  h3,
+  p {
+    text-align: center;
   }
 
   h3 {
@@ -29,10 +40,27 @@
   }
 
   p {
-    text-align: center;
     margin: 10px 0 0;
     line-height: 25px;
     font-size: 14px;
     color: var(--text-paragraph-primary-color);
+  }
+}
+
+.appear {
+  animation-name: cardAppear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  visibility: visible;
+}
+
+@keyframes cardAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

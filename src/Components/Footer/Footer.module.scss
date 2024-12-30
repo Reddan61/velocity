@@ -19,9 +19,18 @@
   padding: 35px 10px;
   font-weight: 300;
 
+  @media (max-width: 850px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   & > div {
     width: 100%;
     max-width: calc(var(--container-max-width) / 3 - 40px);
+
+    @media (max-width: 850px) {
+      max-width: 100%;
+    }
   }
 
   h1 {

@@ -5,12 +5,17 @@
   width: 100%;
   max-width: 430px;
 
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
+
   & > div {
     display: flex;
     justify-content: center;
   }
 
   img {
+    width: 100%;
     user-select: none;
   }
 
